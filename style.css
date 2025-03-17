@@ -1,0 +1,150 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background: linear-gradient(to top, rgb(13, 16, 37), rgb(58, 80, 244));
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  border-radius: 20px;
+  min-height: 60vh;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#content {
+  border-radius: 20px;
+  height: 40vh;
+  width: 100%;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: 0px 0px 20px rgb(14, 53, 53);
+}
+
+.tiles {
+  border: 1px solid rgba(22, 83, 83, 0.736);
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color:rgba(22, 83, 83);
+}
+
+.tiles:hover {
+  background-color: rgb(33, 192, 192);
+  transition: all 0.5s ease-out;
+}
+
+#one {
+  border-top-left-radius: 20px;
+}
+
+#three {
+  border-top-right-radius: 20px;
+}
+
+#seven {
+  border-bottom-left-radius: 20px;
+}
+
+#nine {
+  border-bottom-right-radius: 20px;
+}
+
+#one,
+#two,
+#three {
+  border-top: none;
+}
+
+#three,
+#six,
+#nine {
+  border-right: none;
+}
+
+#seven,
+#eight,
+#nine {
+  border-bottom: none;
+}
+
+#one,
+#seven,
+#four {
+  border-left: none;
+}
+
+#result,
+#restart {
+  display: none;
+  height: 7vh;
+  width: 100%;
+  text-align: center;
+}
+#result{
+  margin-top: 20px;
+  padding: 5px;
+}
+
+#restart {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn {
+  color: wheat;
+  border-radius: 5px;
+  margin-top: 30px;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: linear-gradient(to left, rgb(67, 82, 195), rgb(53, 63, 133));
+  border: none;
+  box-shadow: 0px 0px 20px rgb(14, 53, 53);
+}
+#btn:hover {
+  background: linear-gradient(to right, rgb(67, 82, 195), rgb(53, 63, 133));
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  #content {
+    height: 40vh;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #content {
+    height: 35vh;
+    width: 70vw;
+  }
+}
